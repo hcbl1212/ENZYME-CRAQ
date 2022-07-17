@@ -1,4 +1,5 @@
 require 'test/unit'
+require_relative './craq_validator.rb'
 
 class CraqValidatorTest < Test::Unit::TestCase
   description 'it is invalid with no answers'

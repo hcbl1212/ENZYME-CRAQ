@@ -64,11 +64,11 @@ class CraqValidator
     @answers.key?(answer_key)
   end
 
-  # helpers
   def _valid?
     @errors.empty?
   end
 
+  # helpers
   def invalid_all_answers
     @questions.each_index { |index| add_error(create_key(index), WAS_NOT_ANSWERED) }
   end
