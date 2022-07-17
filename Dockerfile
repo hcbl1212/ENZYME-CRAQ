@@ -1,0 +1,5 @@
+FROM ruby:latest
+ENV INSTALL_PATH /enzyme
+RUN mkdir $INSTALL_PATH
+WORKDIR $INSTALL_PATH
+COPY . .

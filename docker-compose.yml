@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/enzyme/
+    command: 'ruby --jit /enzyme/craq_validator_tests.rb'
