@@ -49,9 +49,7 @@ class CraqValidator
 
   # validation checkers
   def answers_object_valid?
-    valid = !(@answers.nil? || @answers.empty?)
-    invalid_all_answers unless valid
-    valid
+    !(@answers.nil? || @answers.empty?)
   end
 
   def valid_answer?(question_options, answer_key)
